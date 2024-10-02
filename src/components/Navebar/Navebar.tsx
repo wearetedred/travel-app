@@ -10,6 +10,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { FaPlane, FaBed, FaCar, FaHeart, FaChevronDown, FaBars, FaGlobe } from 'react-icons/fa'
+import Image from 'next/image'
+import RecabLogo01 from '../../images/Recab-Logo-01.png'
 
 const menuItems = [
     { icon: <FaBed />, label: 'Hotels', href: '/hotels', isActive: true },
@@ -31,11 +33,8 @@ export default function Navebar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between py-2">
           <Link href="/" className="text-white text-xl md:text-2xl font-bold flex items-center gap-2">
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" fill="white"/>
-              <path d="M21.5 10.5L13.5 18.5L10.5 15.5" stroke="#01223f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-            Travel
+            <Image src={RecabLogo01} width={150} height={23} alt='recab logo'/>
+            
           </Link>
           <div className="hidden md:flex items-center gap-4">
             <div className="flex gap-2">
