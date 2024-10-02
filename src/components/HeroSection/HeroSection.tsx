@@ -62,7 +62,7 @@ const HeroSection: React.FC = () => {
                 <label className="block text-sm font-medium mb-1 text-white">Check-in</label>
                 <Popover>
                   <PopoverTrigger asChild>
-                    <Button variant="outline" className="w-full justify-start text-left font-normal">
+                    <Button variant="outline" className="w-full  font-normal">
                       <FaCalendarAlt className="mr-2 h-4 w-4" />
                       {format(checkIn, "PPP")}
                     </Button>
@@ -82,7 +82,7 @@ const HeroSection: React.FC = () => {
                 <label className="block text-sm font-medium mb-1 text-white">Check-out</label>
                 <Popover>
                   <PopoverTrigger asChild>
-                    <Button variant="outline" className="w-full justify-start text-left font-normal">
+                    <Button variant="outline" className="w-full  font-normal">
                       <FaCalendarAlt className="mr-2 h-4 w-4" />
                       {format(checkOut, "PPP")}
                     </Button>
@@ -93,7 +93,7 @@ const HeroSection: React.FC = () => {
                       selected={checkOut}
                       onSelect={(date: Date | undefined) => date && setCheckOut(date)}
                       initialFocus
-                      className='text-gray-400'
+                      className='text-gray-400 px-3'
                     />
                   </PopoverContent>
                 </Popover>
